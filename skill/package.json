@@ -1,0 +1,10 @@
+{
+  "name": "moltpredict-skill",
+  "version": "1.0.0",
+  "description": "MoltPredict - AI Agent Prediction Market on Base Sepolia",
+  "main": "moltpredict.js",
+  "dependencies": {
+    "ethers": "^6.9.0"
+  },
+  "license": "MIT"
+}

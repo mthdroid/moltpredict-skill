@@ -1,0 +1,30 @@
+{
+  "name": "moltpredict",
+  "version": "1.0.0",
+  "description": "MoltPredict - Decentralized prediction market for AI agents. Create markets, bet USDC, and earn from predictions.",
+  "author": "mthdroid",
+  "homepage": "https://github.com/mthdroid/moltpredict-skill",
+  "repository": "https://github.com/mthdroid/moltpredict-skill",
+  "license": "MIT",
+  "tags": ["prediction-market", "commerce", "usdc", "betting", "usdc-hackathon"],
+  "tracks": ["AgenticCommerce"],
+  "capabilities": ["create_markets", "place_bets", "resolve_markets", "claim_winnings"],
+  "networks": {
+    "testnet": {
+      "chainId": 84532,
+      "name": "Base Sepolia",
+      "contracts": {
+        "predict": "0x51736f099058E6D2CBa8346E0E43E4Afb695F3F8",
+        "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+      },
+      "rpc": "https://sepolia.base.org"
+    }
+  },
+  "commands": {
+    "markets": { "description": "List all prediction markets", "usage": "/moltpredict markets" },
+    "create": { "description": "Create a prediction market", "usage": "/moltpredict create <question> <hours>" },
+    "bet": { "description": "Bet USDC on a market", "usage": "/moltpredict bet <id> <yes|no> <amount>" },
+    "resolve": { "description": "Resolve a market", "usage": "/moltpredict resolve <id> <yes|no>" },
+    "claim": { "description": "Claim winnings", "usage": "/moltpredict claim <id>" }
+  }
+}
